@@ -5,9 +5,12 @@
 // reverse('apple') === 'elpppa'
 // reverse('hello') === 'olleh'
 
-function reverse(str) {
- return str.split('').reduce((rev,char)=>char + rev,'')
-}
+// function reverse(str) {
+//   debugger;
+//  return str.split('').reduce((rev,char)=>char + rev,'')
+// }
+
+//reverse('dafdf')
 
 module.exports = reverse;
 
@@ -20,12 +23,13 @@ module.exports = reverse;
   // --- end  first solution --
 
 // --- secound solution ---
-// function reverse(str) {
-//   let reversed = '';
-//    for( let char of str){
-//       reversed = char + reversed;
-//    }
-//    return reversed
-// }
+function reverse(str) {
+  let reversed = '';
+   for( let char of str){
+      reversed = char + reversed;
+  //    debugger;
+   }
+   return reversed
+}
 
 // --- end secound solution --- 
